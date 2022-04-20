@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./stylle.css">
+</head>
+
+<body id="id">
+    <h1 >Calculadora</h1>
+     <div id="head">
+        
+        <div id="resultado">
+           
+     </div>
+    </div>
+    <main id="main">
+        <div class="line1">
+            <button class="bt " onclick="clean()">AC</button class="bt">
+            <button class="bt" onclick="back()">X</button class="bt">
+            <button class="bt" onclick="insert('%')">%</button class="bt">
+            <button class="bt " onclick="insert('/')">÷</button class="bt">
+        </div>
+        <div class="line2">
+            <button class="bt b" onclick="insert('7')">7</button class="bt">
+            <button class="bt b" onclick="insert('8')">8</button class="bt">
+            <button class="bt b" onclick="insert('9')">9</button class="bt">
+            <button class="bt" onclick="insert('*')">x</button class="bt">
+        </div>
+        <div class="line3"></div>
+
+        <div class="line4">
+            <button class="bt b" onclick="insert('4')">4</button class="bt">
+            <button class="bt b" onclick="insert('5')">5</button class="bt">
+            <button class="bt b" onclick="insert('6')">6</button class="bt">
+            <button class="bt " onclick="insert('-')">-</button class="bt">
+        </div>
+        <div class="line5">
+            <button class="bt b" onclick="insert('1')">1</button class="bt">
+            <button class="bt b" onclick="insert('2')">2</button class="bt">
+            <button class="bt b" onclick="insert('3')">3</button class="bt">
+            <button class="bt" onclick="insert('+')">+</button class="bt">
+        </div>
+        <div class="line6">
+            <button class="bt">#</button class="bt">
+            <button class="bt b" onclick="insert('0')">0</button class="bt">
+            <button class="bt b" onclick="insert('.')">,</button class="bt">
+            <button class="bt" onclick="calculate()">=</button class="bt">
+        </div>
+    </main>
+    <script src="./calculadora.js"></script>
+</body>
+
+</html>
