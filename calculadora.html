@@ -12,7 +12,8 @@
         }
 
         h1 {
-            margin: 40px 0px 60px 0px;
+            font-size: 40px;
+            margin: 20px 0px 20px 0px;
             text-align: center;
             color: aliceblue;
         }
@@ -41,23 +42,25 @@
             /* espaço entr os item*/
         }
 
-        h1 {
-            font-size: 40px;
-        }
-
         .bt:hover {
             background-color: rgb(13, 14, 13);
         }
 
         .bt {
             color: rgb(202, 70, 29);
-            height: 70px;
-            width: 70px;
+            height: 100px;
+            width: 100px;
         }
 
         button {
             background-color: black;
             border: none;
+
+        }
+
+        .line1 {
+            border-top: 0.px solid rgb(255, 255, 255);
+            padding-top: 10px;
         }
 
         .bt.g {
@@ -69,10 +72,15 @@
 
         }
 
+        .bt.b {
+            color: white;
+        }
+
         #resultado {
             margin: 10px 215px 10px 215px;
-            padding-bottom: 20px;
-            text-align: center
+            padding-bottom: 1px;
+            text-align: center;
+
         }
 
         * {
@@ -129,9 +137,10 @@
     <main id="main">
         <div class="line1">
             <button class="bt " onclick="clean()">AC</button class="bt">
-            <button class="bt" onclick="back()">X</button class="bt">
-            <button class="bt" onclick="insert('%')">%</button class="bt">
-            <button class="bt " onclick="insert('/')">÷</button class="bt">
+            <button class="bt" onclick="back()">
+                << /button class="bt">
+                    <button class="bt" onclick="insert('%')">%</button class="bt">
+                    <button class="bt " onclick="insert('/')">÷</button class="bt">
         </div>
         <div class="line2">
             <button class="bt b" onclick="insert('7')">7</button class="bt">
