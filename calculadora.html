@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <style>
-        body {
+                body {
             background-color: rgb(13, 13, 14);
-
+            
         }
 
         h1 {
@@ -41,23 +41,21 @@
             gap: 2px;
             /* espaço entr os item*/
         }
-
         .bt:hover {
             background-color: rgb(13, 14, 13);
         }
 
         .bt {
             color: rgb(202, 70, 29);
-            height: 100px;
-            width: 100px;
+            height: 90px;
+            width: 90px;
         }
 
         button {
             background-color: black;
             border: none;
-
+            
         }
-
         .line1 {
             border-top: 0.px solid rgb(255, 255, 255);
             padding-top: 10px;
@@ -71,8 +69,7 @@
             color: white;
 
         }
-
-        .bt.b {
+        .bt.b{
             color: white;
         }
 
@@ -80,7 +77,8 @@
             margin: 10px 215px 10px 215px;
             padding-bottom: 1px;
             text-align: center;
-
+            font-size: 20px;
+            
         }
 
         * {
@@ -117,30 +115,29 @@
             }
         }
 
-        @media (min-width: 1024px) {
-            .body {
-                width: auto;
-                height: 100px
-            }
-        }
+@media (min-width: 1024px) {
+    .body {
+        width: auto;
+        height: 100px
+    }
+}
     </style>
 </head>
 
 <body id="id">
-    <h1>Calculadora</h1>
-    <div id="head">
-
+    <h1 >Calculadora</h1>
+     <div id="head">
+        
         <div id="resultado">
-
-        </div>
+           
+     </div>
     </div>
     <main id="main">
         <div class="line1">
             <button class="bt " onclick="clean()">AC</button class="bt">
-            <button class="bt" onclick="back()">
-                << /button class="bt">
-                    <button class="bt" onclick="insert('%')">%</button class="bt">
-                    <button class="bt " onclick="insert('/')">÷</button class="bt">
+            <button class="bt" onclick="back()"><</button class="bt">
+            <button class="bt" onclick="insert('%')">%</button class="bt">
+            <button class="bt " onclick="insert('/')">÷</button class="bt">
         </div>
         <div class="line2">
             <button class="bt b" onclick="insert('7')">7</button class="bt">
