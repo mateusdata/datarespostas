@@ -5,16 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="./stylle.css">
+    <style>
+        body {
+            background-color: rgb(13, 13, 14);
+        }
+
+        h1 {
+            margin: 40px 0px 60px 0px;
+            text-align: center;
+        }
+
+        #head {
+            text-align: center;
+            color: aliceblue;
+            margin-bottom: 10px;
+        }
+
+        main {
+            background-color: rgb(13, 13, 14);
+            color: orange;
+            align-items: center;
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+
+            font-size: medium;
+            font-weight: 100;
+            height: 350px;
+            justify-content: top;
+            /* justify-content: space-evenly;*/
+            align-content: space-around;
+            gap: 10px;
+            /* espaço entr os item*/
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .bt:hover {
+            background-color: rgb(13, 14, 13);
+        }
+
+        .bt {
+            color: rgb(202, 70, 29);
+            height: 70px;
+            width: 70px;
+        }
+
+        button {
+            background-color: black;
+            border: none;
+        }
+
+        .bt.g {
+            background-color: rgb(206, 66, 31);
+            font-size: 18px;
+            border-radius: 39px;
+            padding-left: 10px;
+            color: white;
+
+        }
+
+        #resultado {
+            margin: 10px 215px 10px 215px;
+            padding-bottom: 20px;
+            text-align: right;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px
+        }
+
+        /* Resluções */
+        @media (min-width: 240px) {
+            .body {
+                width: auto;
+                height: 100px
+            }
+        }
+
+        @media (min-width: 270px) {
+            .body {
+                width: auto;
+                height: 100px
+            }
+        }
+
+        @media (min-width: 480px) {
+            .body {
+                width: auto;
+                height: 100px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .body {
+                width: auto;
+                height: 100px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .body {
+                width: auto;
+                height: 100px
+            }
+        }
+    </style>
 </head>
 
 <body id="id">
-    <h1 >Calculadora</h1>
-     <div id="head">
-        
+    <h1>Calculadora</h1>
+    <div id="head">
+
         <div id="resultado">
-           
-     </div>
+
+        </div>
     </div>
     <main id="main">
         <div class="line1">
