@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        body * {
+            box-sizing: border-box;
+            /*resouber pra todos os elementos da pagina pra não ficar grudados aos lados*/
+        }
+
+        .login {
+            width: 100vw;
+            /*vw ele é a porcentagem da largura da sua vioport
+    digamos que sua vioport , vioport e sua tela e ela tem 100px de largura 
+    se voce colocar 1vh  vai ser relaionado a 1% do tamanho da largura dela.
+    ou seja se sua vioport tem largura de 1000px 1% de 1000 vai ser 10px
+    a sila vw significa vioport with ou largura da janela*/
+            height: 100vh;
+            /* vh significa vioport height ou seja altura da janela*/
+
+            background: #201b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .esquerdaLogin {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #77ffc0;
+
+            gap: 10px;
+        }
+
+        .esquerdaLogin>h1 {
+            height: 3vw;
+            color: #77ffc0;
+        }
+
+        .imagem {
+            /*margin-top: 90px;*/
+            width: 30vw;
+        }
+
+        .direitaLogin {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cartaoLogin {
+            width: 60%;
+            /*aqui ele pega os 60% da div da esquerda 
+    onde ela ela tem 50vh que é 50% da vioport /tela*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background: #2f2841;
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px #00000056;
+            /*sombra*/
+        }
+
+        .cartaoLogin>h1 {
+            color: #00ff88;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .campoTexto {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .campoTexto>input {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            background: #514869;
+            color: #f0ffffde;
+            font-size: 12pt;
+            box-shadow: 0px 10px 40px #00000056;
+            outline: none;
+            /*remover o borda do input*/
+            box-sizing: border-box;
+            /*a div filho jamais vai utrapassar a div pae*/
+
+        }
+
+        .campoTexto>label {
+            color: #f0ffffde;
+            margin-bottom: 10px;
+        }
+
+        /*chamando o placeholder*/
+        .campoTexto>input::placeholder {
+            color: #f0ffff94;
+        }
+
+        .botaoLogin {
+            width: 100%;
+            padding: 16px;
+            margin: 25px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 3px;
+            /*espaçamento entre as letras*/
+            color: #2b134b;
+            background: #00ff88;
+            cursor: pointer;
+            /*quando apertar na btão aparece uma mão*/
+            box-shadow: 0px 10px 40px -12px #00ff8052;
+        }
+
+        .botaoLogin:hover {
+            background-color: #0b7225;
+        }
+
+        @media only screen and (max-width:950px) {
+            .cartaoLogin {
+                width: 85%;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .login {
+                flex-direction: column;
+            }
+
+            .esquerdaLogin>h1 {
+                display: none;
+                /*oculta as coisas  do nosso html*/
+            }
+
+            .esquerdaLogin {
+                width: 100%;
+                height: auto;
+            }
+
+            .direitaLogin {
+                width: 100%;
+                height: auto;
+            }
+
+            .imagem {
+                padding-bottom: 30px;
+                width: 40vh;
+            }
+
+            .cartaoLogin {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="esquerdaLogin">
+            <h1>Faça login no Data respostas</h1>
+            <img src="./logo.svg" class="imagem" alt="logo">
+
+
+        </div>
+        <div class="direitaLogin">
+            <div class="cartaoLogin">
+                <h1>login</h1>
+                <div class="campoTexto">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" placeholder="Usuario">
+                </div>
+                <div class="campoTexto">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="botaoLogin">Login</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
